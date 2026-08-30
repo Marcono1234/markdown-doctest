@@ -197,3 +197,5 @@ pub fn md_doctest(input: TokenStream) -> TokenStream {
     }
     .into()
 }
+
+mod integration_test;
