@@ -1,0 +1,33 @@
+[package]
+name = "markdown_doctest"
+version = "0.0.0"
+authors = ["Marcono1234"]
+edition = "2024"
+rust-version = "1.91.0"
+description = "Library for including and transforming Rust code blocks of Markdown files as doctests"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/Marcono1234/markdown-doctest"
+keywords = ["markdown", "testing", "doctest", "readme"]
+categories = ["development-tools::testing", "rust-patterns"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0.107"
+quote = "1.0.47"
+syn = { version = "3.0.3", default-features = false, features = [
+    "proc-macro",
+    "parsing",
+] }
+
+[dev-dependencies]
+trybuild = "1.0.120"
+
+[lints.rust]
+unsafe_code = "forbid"
+
+# docs.rs specific configuration
+[package.metadata.docs.rs]
+# Document all features
+all-features = true

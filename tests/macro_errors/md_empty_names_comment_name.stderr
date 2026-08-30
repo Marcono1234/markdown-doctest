@@ -1,0 +1,5 @@
+error: parsing Markdown failed: contains empty name at line 1
+ --> tests/macro_errors/md_empty_names_comment_name.rs:2:5
+  |
+2 |     "md_empty_names_comment_name.md",
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

@@ -1,0 +1,5 @@
+error: parsing Markdown failed: dangling attributes comment at line 2
+ --> tests/macro_errors/md_dangling_names_attributes_comment.rs:2:5
+  |
+2 |     "md_dangling_names_attributes_comment.md",
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

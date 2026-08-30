@@ -1,0 +1,31 @@
+# See https://docs.github.com/en/code-security/reference/supply-chain-security/dependabot-options-reference
+
+version: 2
+updates:
+  - package-ecosystem: "rust-toolchain"
+    directory: "/"
+    schedule:
+      interval: "semiannually"
+    cooldown:
+      default-days: 14
+
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "semiannually"
+    cooldown:
+      default-days: 14
+    open-pull-requests-limit: 15
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "semiannually"
+    cooldown:
+      default-days: 14
+    open-pull-requests-limit: 15
+    ignore:
+      # Ignore patch updates for 'taiki-e/install-action' because they seem to only update the tool
+      # versions; however GitHub workflow here has intentionally pinned tool version
+      - dependency-name: "taiki-e/install-action"
+        update-types: ["version-update:semver-patch"]

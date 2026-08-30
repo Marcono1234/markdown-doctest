@@ -1,0 +1,106 @@
+line: 2
+```should_panic
+dummy
+single attribute
+```
+
+---
+
+line: 7
+```edition2018,compile_fail
+dummy
+multiple attributes
+```
+
+---
+
+line: 12
+```compile_fail
+dummy
+compile_fail should still appear in output
+```
+
+---
+
+line: 17
+```no_run
+dummy
+no_run should still appear in output
+```
+
+---
+
+line: 22
+
+_ignored_
+
+---
+
+line: 27
+```ignore-x86_64
+dummy
+target ignore should appear in output
+```
+
+---
+
+line: 32
+```ignore-x86_64,ignore-windows
+dummy
+multiple target ignores
+```
+
+---
+
+line: 37
+```no_run
+dummy
+list
+```
+
+---
+
+line: 43\
+names: list
+```no_run
+dummy
+names and attributes
+```
+
+---
+
+line: 48\
+names: list
+```no_run
+dummy
+names and attributes same line
+```
+
+---
+
+line: 54\
+names: list
+```no_run
+dummy
+list with names and attributes
+```
+
+---
+
+line: 60\
+names: quote
+```no_run
+dummy
+block quote with names and attributes
+```
+
+---
+
+line: 64
+```rust
+dummy
+ensure that previous attributes were cleared; this should have no attributes
+```
+
+---
+

@@ -1,0 +1,11 @@
+error: does not match any line in any code block
+ --> tests/macro_errors/transform_no_match.rs:5:13
+  |
+5 |             "does-not-exist"| => "insert",
+  |             ^^^^^^^^^^^^^^^^
+
+error: does not match any line in any code block
+ --> tests/macro_errors/transform_no_match.rs:7:13
+  |
+7 |             "does-not-exist-either"| => "insert",
+  |             ^^^^^^^^^^^^^^^^^^^^^^^

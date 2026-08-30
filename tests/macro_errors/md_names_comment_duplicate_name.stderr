@@ -1,0 +1,5 @@
+error: parsing Markdown failed: contains duplicate name 'first' at line 1
+ --> tests/macro_errors/md_names_comment_duplicate_name.rs:2:5
+  |
+2 |     "md_names_comment_duplicate_name.md",
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

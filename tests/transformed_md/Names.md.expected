@@ -1,0 +1,35 @@
+line: 2\
+names: name
+```rust
+dummy
+single name
+```
+
+---
+
+line: 7\
+names: name, another-one
+```rust
+dummy
+multiple names
+```
+
+---
+
+line: 12\
+names: list
+```rust
+dummy
+list
+```
+
+---
+
+line: 16
+```rust
+dummy
+ensure that previous names were cleared; this should have no name
+```
+
+---
+

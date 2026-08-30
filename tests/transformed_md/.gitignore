@@ -1,0 +1,2 @@
+# Ignore 'actual' macro debug output created by tests
+*.md_doctest_debug.md

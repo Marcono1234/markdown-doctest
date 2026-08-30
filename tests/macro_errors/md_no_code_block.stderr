@@ -1,0 +1,5 @@
+error: did not find any ```rust code blocks in file
+ --> tests/macro_errors/md_no_code_block.rs:2:5
+  |
+2 |     "md_no_code_block.md",
+  |     ^^^^^^^^^^^^^^^^^^^^^

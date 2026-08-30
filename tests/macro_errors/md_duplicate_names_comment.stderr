@@ -1,0 +1,5 @@
+error: parsing Markdown failed: names comment already exists at line 1
+ --> tests/macro_errors/md_duplicate_names_comment.rs:2:5
+  |
+2 |     "md_duplicate_names_comment.md",
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

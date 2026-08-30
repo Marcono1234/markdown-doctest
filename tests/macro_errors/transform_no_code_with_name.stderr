@@ -1,0 +1,11 @@
+error: no code block with this name exists
+ --> tests/macro_errors/transform_no_code_with_name.rs:4:9
+  |
+4 |         "does-not-exist": {
+  |         ^^^^^^^^^^^^^^^^
+
+error: no code block with this name exists
+ --> tests/macro_errors/transform_no_code_with_name.rs:8:9
+  |
+8 |         "does-not-exist-either": {
+  |         ^^^^^^^^^^^^^^^^^^^^^^^

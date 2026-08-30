@@ -1,0 +1,5 @@
+error: all code blocks have `ignore` attribute
+ --> tests/macro_errors/transform_no_match_ignore.rs:2:5
+  |
+2 |     "transform_no_match_ignore.md",
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

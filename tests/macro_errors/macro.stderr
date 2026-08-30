@@ -1,0 +1,83 @@
+error: should specify at least one transform
+ --> tests/macro_errors/macro.rs:5:18
+  |
+5 |       transforms = {
+  |  __________________^
+6 | |         // no transforms
+7 | |     },
+  | |_____^
+
+error: duplicate wildcard
+  --> tests/macro_errors/macro.rs:20:9
+   |
+20 |         *: {
+   |         ^
+
+error: duplicate name
+  --> tests/macro_errors/macro.rs:36:9
+   |
+36 |         "a": {
+   |         ^^^
+
+error: should specify at least one transform
+  --> tests/macro_errors/macro.rs:45:14
+   |
+45 |           "a": {
+   |  ______________^
+46 | |             // no transforms
+47 | |         },
+   | |_________^
+
+error: search string is matched per line; `\n` and `\r` will not match
+  --> tests/macro_errors/macro.rs:56:13
+   |
+56 |             "a\nb"| => "a",
+   |             ^^^^^^
+
+error: search string is matched per line; `\n` and `\r` will not match
+  --> tests/macro_errors/macro.rs:66:13
+   |
+66 |             "a\rb"| => "a",
+   |             ^^^^^^
+
+error: cannot both match and replace any prefix
+  --> tests/macro_errors/macro.rs:76:16
+   |
+76 |             (*<*"a">) => "b",
+   |                ^
+
+error: cannot both match and replace any suffix
+  --> tests/macro_errors/macro.rs:86:20
+   |
+86 |             (<"a"*>*) => "b",
+   |                    ^
+
+error: inserted line must not contain `\n` or `\r`; use `[...]` to specify multiple lines to insert
+  --> tests/macro_errors/macro.rs:96:21
+   |
+96 |             "a"| => "b\n",
+   |                     ^^^^^
+
+error: inserted line must not contain `\n` or `\r`; use `[...]` to specify multiple lines to insert
+   --> tests/macro_errors/macro.rs:106:21
+    |
+106 |             "a"| => "b\r",
+    |                     ^^^^^
+
+error: inserted value must not contain `\n` or `\r`
+   --> tests/macro_errors/macro.rs:116:23
+    |
+116 |             ("a"|) => "b\n",
+    |                       ^^^^^
+
+error: inserted value must not contain `\n` or `\r`
+   --> tests/macro_errors/macro.rs:126:23
+    |
+126 |             ("a"|) => "b\r",
+    |                       ^^^^^
+
+error: must not be empty
+   --> tests/macro_errors/macro.rs:136:21
+    |
+136 |             "a"| => [],
+    |                     ^^

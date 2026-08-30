@@ -1,0 +1,163 @@
+line: 2\
+names: insert-start
+```rust
+1-1
+1-2
+start
+first
+second
+```
+
+---
+
+line: 8\
+names: insert-end
+```rust
+first
+second
+end
+1-1
+1-2
+```
+
+---
+
+line: 14\
+names: insert-line-before
+```rust
+1-1
+1-2
+first
+prefix first
+first suffix
+1-1
+1-2
+first
+2
+second
+3
+third
+third suffix
+4
+fourth
+prefix fourth
+5
+fifth
+```
+
+---
+
+line: 28\
+names: insert-line-after
+```rust
+first
+1-1
+1-2
+prefix first
+first suffix
+first
+1-1
+1-2
+second
+2
+third
+3
+third suffix
+fourth
+4
+prefix fourth
+fifth
+5
+```
+
+---
+
+line: 42\
+names: insert-inside-line-before
+```rust
+1first
+prefix first
+first suffix
+1first
+se2cond
+second suffix
+3third
+prefix third
+f4ourth
+text 5multiple values 5multiple here
+```
+
+---
+
+line: 56\
+names: insert-inside-line-after
+```rust
+first1
+prefix first
+first suffix
+first1
+second2
+second suffix
+thir3d
+prefix third
+four4th
+text multiple5 values multiple5 here
+```
+
+---
+
+line: 70\
+names: replace-line
+```rust
+1-1
+1-2
+prefix first
+first suffix
+1-1
+1-2
+2
+second suffix
+3
+prefix third
+4
+```
+
+---
+
+line: 84\
+names: replace-inside-line
+```rust
+1
+prefix first
+first suffix
+1
+se2
+second suffix
+3d
+prefix third
+f4th
+text 5 values 5 here
+6
+sixth suffix
+7
+prefix seventh
+8
+9h
+t10
+```
+
+---
+
+line: 105\
+names: transform-sequence
+```rust
+2
+1
+3
+4
+5
+8
+```
+
+---
+

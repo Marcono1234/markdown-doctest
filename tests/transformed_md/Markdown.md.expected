@@ -1,0 +1,74 @@
+line: 3
+```rust
+dummy
+first
+    second
+```
+
+---
+
+line: 11
+```rust
+dummy
+nested
+inside lists
+```
+
+---
+
+line: 16
+```rust
+dummy
+This one is
+in a quote
+```
+
+---
+
+line: 23
+```rust
+dummy
+nested
+quote
+```
+
+---
+
+line: 30
+```rust
+dummy
+trailing
+space
+```
+
+---
+
+line: 37
+```rust
+dummy
+trailing space
+after
+```
+
+---
+
+line: 42
+```rust
+dummy
+  bad
+  indented
+```
+
+---
+
+line: 47
+````rust
+dummy
+more than ```
+```nested
+this is still inside rust code block
+```
+````
+
+---
+
